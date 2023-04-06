@@ -65,3 +65,11 @@ div.tooltip {
 path {
     pointer-events: all;
 }
+
+.dropdown {
+    position: absolute;
+    top: 470;
+    left: 100;
+    width: 110px;
+    height: 30px;
+}

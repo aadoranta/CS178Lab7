@@ -4,7 +4,7 @@
 var xhr = null;
 
 // connect to server and get callback
-function connectServer() {
+function connectServer(perplexity) {
     console.log("Get users...");
     if (!xhr) {
         // Create a new XMLHttpRequest object 
@@ -13,7 +13,7 @@ function connectServer() {
     xhr.onreadystatechange = dataCallback;
 
     // asynchronous requests
-    xhr.open("GET", "http://localhost:6969/confusionMatrix", true);
+    xhr.open("GET", `http://localhost:6969/confusionMatrix`, true);
 
     // Send the request to the server, this is needed even if nothing is sent in this case
     xhr.send(null);
@@ -30,7 +30,7 @@ function dataCallback() {
         project_result = JSON.parse(xhr.responseText)[3]
         // draw scatterplot and confusion matrix
         draw_scatterplots(happinessData, predictionData, confusionMatrix, project_result)
-    }
+    } 
 }
 
 /* Draw Scatter Plot Section*/
@@ -283,6 +283,43 @@ function draw_scatterplots(happinessData, predictionData, confusionMatrix, proje
                 .attr('for', (d) => d)
                 .text((d) => d)
 
+// *******************************************************************
+            // Added drop-down menu to select perplexity
+        var options = [
+                    {value: 2, label: 'Perplexity: 2'},
+                    {value: 5, label: 'Perplexity: 5'},
+                    {value: 10, label: 'Perplexity: 10'},
+                    {value: 20, label: 'Perplexity: 20'}
+                  ];
+
+        var dropdown = d3.select('body')
+                .append('select')
+                .attr('x', 0)
+                .attr('y', 0)
+                .attr('class', 'dropdown')
+                .style('display', 'none')
+                .on('change', function() {
+                    var selectedValue = d3.select(this).property('value');
+                    if (selectedValue == 5) {
+                        tsneData = project_result[4]
+                    }else if (selectedValue == 10) {
+                        tsneData = project_result[5]
+                    }else if (selectedValue == 20) {
+                        tsneData = project_result[6]
+                    }else {
+                        tsneData = project_result[2]
+                    }
+                    redrawScatterplots(modelContainers)
+                });
+        
+        dropdown.selectAll('#projection-select')
+                .data(options)
+                .enter()
+                .append('option')
+                .attr('value', function(d) { return d.value; })
+                .text(function(d) { return d.label; });
+// ***************************************************************
+
         // TODO: on change event
         // HINT: what is supposed to happen after you change the index
         // what variable(variables) is supposed to change
@@ -290,7 +327,16 @@ function draw_scatterplots(happinessData, predictionData, confusionMatrix, proje
         d3.selectAll("input[name='projection']")
             .on("change", function(d) {
                 // Being received correctly
+// **************************************************************
+                // Only display perplexity options of tsne is selected frorm radio buttons
                 currProjectionOption = d3.select("input[name='projection']:checked").property("value")
+                if (currProjectionOption === 'tsne') {
+                    dropdown.style('display', 'block')
+                }
+                else {
+                    dropdown.style('display', 'none')
+                    }
+// *************************************************************
                 redrawScatterplots(modelContainers)
             })
     }
@@ -341,13 +387,18 @@ function draw_scatterplots(happinessData, predictionData, confusionMatrix, proje
             // Set domain for x and y scales based on min and max of projected data
             xValues = [] // Created array for x values
             yValues = [] // ditto for y values
-            offset = 1 // Set a standard offset value
             scatterplotData.forEach((element) => {xValues.push(element['x'])}) // Filled xValues array
             scatterplotData.forEach((element) => {yValues.push(element['y'])}) // ditto for yValues
-            xScale.domain([d3.min(xValues) - offset, d3.max(xValues) + offset]) // Set xScale domain as min and max of xValues plus offset
-            yScale.domain([d3.min(yValues) - offset, d3.max(yValues)+ offset]) // Same for yScale
-            miniXScale.domain([d3.min(xValues) - offset, d3.max(xValues)+ offset]) // Same for miniXScale
-            miniYScale.domain([d3.min(yValues) - offset, d3.max(yValues)+ offset]) // Same for miniYScale
+            xMax = d3.max(xValues)
+            yMax = d3.max(yValues)
+            xMin = d3.min(xValues)
+            yMin = d3.min(yValues)
+            xOffset = 0.15*(xMax - xMin) // x offset is 15% of the spread of the x data
+            yOffset = 0.15*(yMax - yMin) // ditto for y offset
+            xScale.domain([xMin - xOffset, xMax + xOffset]) // Set xScale domain as min and max of xValues plus offset
+            yScale.domain([yMin - yOffset, yMax + yOffset]) // Same for yScale
+            miniXScale.domain([xMin - xOffset, xMax + xOffset]) // Same for miniXScale
+            miniYScale.domain([yMin - yOffset, yMax + yOffset]) // Same for miniYScale
 // *******************************************************************************************
         }
     }
