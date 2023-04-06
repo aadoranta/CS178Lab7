@@ -1,0 +1,290 @@
+{
+    "132": {
+        "city_services": 3,
+        "housing_cost": 4,
+        "schools": 4,
+        "trust_police": 5,
+        "streets_sidewalks": 1,
+        "events": 3
+    },
+    "53": {
+        "city_services": 5,
+        "housing_cost": 1,
+        "schools": 3,
+        "trust_police": 3,
+        "streets_sidewalks": 4,
+        "events": 4
+    },
+    "110": {
+        "city_services": 5,
+        "housing_cost": 2,
+        "schools": 2,
+        "trust_police": 4,
+        "streets_sidewalks": 5,
+        "events": 5
+    },
+    "89": {
+        "city_services": 4,
+        "housing_cost": 2,
+        "schools": 4,
+        "trust_police": 4,
+        "streets_sidewalks": 4,
+        "events": 4
+    },
+    "33": {
+        "city_services": 4,
+        "housing_cost": 1,
+        "schools": 3,
+        "trust_police": 4,
+        "streets_sidewalks": 4,
+        "events": 5
+    },
+    "68": {
+        "city_services": 4,
+        "housing_cost": 1,
+        "schools": 3,
+        "trust_police": 4,
+        "streets_sidewalks": 4,
+        "events": 4
+    },
+    "4": {
+        "city_services": 5,
+        "housing_cost": 4,
+        "schools": 3,
+        "trust_police": 3,
+        "streets_sidewalks": 3,
+        "events": 5
+    },
+    "131": {
+        "city_services": 5,
+        "housing_cost": 3,
+        "schools": 5,
+        "trust_police": 4,
+        "streets_sidewalks": 5,
+        "events": 5
+    },
+    "81": {
+        "city_services": 5,
+        "housing_cost": 2,
+        "schools": 5,
+        "trust_police": 5,
+        "streets_sidewalks": 5,
+        "events": 5
+    },
+    "26": {
+        "city_services": 3,
+        "housing_cost": 4,
+        "schools": 3,
+        "trust_police": 3,
+        "streets_sidewalks": 2,
+        "events": 3
+    },
+    "77": {
+        "city_services": 4,
+        "housing_cost": 5,
+        "schools": 5,
+        "trust_police": 5,
+        "streets_sidewalks": 1,
+        "events": 3
+    },
+    "123": {
+        "city_services": 5,
+        "housing_cost": 3,
+        "schools": 4,
+        "trust_police": 4,
+        "streets_sidewalks": 4,
+        "events": 4
+    },
+    "2": {
+        "city_services": 5,
+        "housing_cost": 3,
+        "schools": 3,
+        "trust_police": 3,
+        "streets_sidewalks": 3,
+        "events": 5
+    },
+    "103": {
+        "city_services": 5,
+        "housing_cost": 4,
+        "schools": 4,
+        "trust_police": 4,
+        "streets_sidewalks": 4,
+        "events": 5
+    },
+    "113": {
+        "city_services": 5,
+        "housing_cost": 3,
+        "schools": 4,
+        "trust_police": 3,
+        "streets_sidewalks": 4,
+        "events": 3
+    },
+    "92": {
+        "city_services": 5,
+        "housing_cost": 2,
+        "schools": 3,
+        "trust_police": 4,
+        "streets_sidewalks": 4,
+        "events": 5
+    },
+    "10": {
+        "city_services": 3,
+        "housing_cost": 2,
+        "schools": 3,
+        "trust_police": 3,
+        "streets_sidewalks": 2,
+        "events": 3
+    },
+    "27": {
+        "city_services": 3,
+        "housing_cost": 3,
+        "schools": 3,
+        "trust_police": 5,
+        "streets_sidewalks": 5,
+        "events": 5
+    },
+    "13": {
+        "city_services": 4,
+        "housing_cost": 2,
+        "schools": 4,
+        "trust_police": 5,
+        "streets_sidewalks": 4,
+        "events": 3
+    },
+    "121": {
+        "city_services": 4,
+        "housing_cost": 2,
+        "schools": 4,
+        "trust_police": 4,
+        "streets_sidewalks": 4,
+        "events": 4
+    },
+    "116": {
+        "city_services": 3,
+        "housing_cost": 2,
+        "schools": 2,
+        "trust_police": 3,
+        "streets_sidewalks": 3,
+        "events": 3
+    },
+    "130": {
+        "city_services": 5,
+        "housing_cost": 2,
+        "schools": 2,
+        "trust_police": 4,
+        "streets_sidewalks": 4,
+        "events": 5
+    },
+    "85": {
+        "city_services": 5,
+        "housing_cost": 3,
+        "schools": 3,
+        "trust_police": 3,
+        "streets_sidewalks": 2,
+        "events": 5
+    },
+    "44": {
+        "city_services": 4,
+        "housing_cost": 2,
+        "schools": 4,
+        "trust_police": 3,
+        "streets_sidewalks": 2,
+        "events": 4
+    },
+    "80": {
+        "city_services": 5,
+        "housing_cost": 3,
+        "schools": 3,
+        "trust_police": 4,
+        "streets_sidewalks": 3,
+        "events": 3
+    },
+    "114": {
+        "city_services": 5,
+        "housing_cost": 2,
+        "schools": 3,
+        "trust_police": 3,
+        "streets_sidewalks": 3,
+        "events": 5
+    },
+    "102": {
+        "city_services": 5,
+        "housing_cost": 4,
+        "schools": 4,
+        "trust_police": 3,
+        "streets_sidewalks": 3,
+        "events": 4
+    },
+    "23": {
+        "city_services": 4,
+        "housing_cost": 3,
+        "schools": 5,
+        "trust_police": 5,
+        "streets_sidewalks": 5,
+        "events": 4
+    },
+    "84": {
+        "city_services": 5,
+        "housing_cost": 2,
+        "schools": 3,
+        "trust_police": 5,
+        "streets_sidewalks": 5,
+        "events": 5
+    },
+    "133": {
+        "city_services": 5,
+        "housing_cost": 1,
+        "schools": 5,
+        "trust_police": 5,
+        "streets_sidewalks": 5,
+        "events": 5
+    },
+    "60": {
+        "city_services": 4,
+        "housing_cost": 4,
+        "schools": 4,
+        "trust_police": 4,
+        "streets_sidewalks": 3,
+        "events": 4
+    },
+    "63": {
+        "city_services": 4,
+        "housing_cost": 4,
+        "schools": 3,
+        "trust_police": 3,
+        "streets_sidewalks": 2,
+        "events": 5
+    },
+    "30": {
+        "city_services": 5,
+        "housing_cost": 3,
+        "schools": 3,
+        "trust_police": 3,
+        "streets_sidewalks": 5,
+        "events": 3
+    },
+    "7": {
+        "city_services": 5,
+        "housing_cost": 4,
+        "schools": 4,
+        "trust_police": 4,
+        "streets_sidewalks": 4,
+        "events": 5
+    },
+    "1": {
+        "city_services": 3,
+        "housing_cost": 2,
+        "schools": 3,
+        "trust_police": 5,
+        "streets_sidewalks": 4,
+        "events": 3
+    },
+    "142": {
+        "city_services": 5,
+        "housing_cost": 3,
+        "schools": 2,
+        "trust_police": 5,
+        "streets_sidewalks": 5,
+        "events": 5
+    }
+}
